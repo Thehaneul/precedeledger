@@ -1,0 +1,121 @@
+PRECEDELEDGER — BOUNDED STUDIO WALKTHROUGH
+Version precedeledger-0.1 | 3 November 2026
+
+COMPLETED on the recorded deployment. Plan 0 COMPLETE; plan 1 BLOCKED_CYCLE.
+This is the original reproduction checklist, not a request for more testing.
+See HOSTED_RESULTS.json for observed results and evidence limits.
+
+Use fictional inputs. Wallet A is the creator; Wallet B is the partner.
+Use two different Studio accounts you control. Do not share private keys.
+Addresses below are not pre-filled; copy the FULL address from your actual wallet.
+
+This checklist is the complete planned validation scope:
+- one deployment;
+- seven method transactions: six expected successes and one intended rejection;
+- short reads to verify stored state.
+Only two successful method calls invoke AI (creating the valid and cyclic plans).
+No additional optional live tests are required after this checklist passes.
+
+0. DEPLOY
+Add From File: precedeledger.py. Normal / Full Consensus, Simulation Mode off.
+Deploy new instance, with no constructor arguments.
+Record actual environment/network, contract address and deployment transaction ID.
+Check execution SUCCESS separately from consensus status and finalization.
+Read get_rules(): expect version precedeledger-0.1, plan_count 0.
+
+1. WALLET A — CREATE THE PLAN
+Method: create_plan
+plan_key: display_demo
+partner_wallet: paste Wallet B's full 0x address
+rules_text: paste these TWO lines exactly:
+
+Finish the card wording before printing and placing the cards.
+Arrange the tables before printing and placing the cards.
+
+After a successful, accepted transaction, read get_plan_summary with the returned
+plan_id. On a fresh deployment this should be 0; use the actual saved ID.
+Expected status: AWAITING_PARTNER
+Expected graph_outcome: VALID_ORDER
+Expected edges: tables -> cards, wording -> cards
+Read get_plan too: the interpretation must preserve both supplied rules.
+Copy the exact saved plan_hash. Do not invent it or add a 0x prefix.
+
+2. WALLET B — ACCEPT
+Switch active wallet to B.
+Method: accept_plan
+plan_id: the saved ID
+expected_plan_hash: paste the exact hash from step 1
+Read get_plan_summary: expect ACTIVE.
+wording and tables should be READY_TO_REPORT; cards must be waiting for both.
+
+3. WALLET B — ONE INTENDED REJECTION
+Method: mark_done
+plan_id: same ID
+expected_plan_hash: same hash
+task_id: cards
+Expected execution error: Prerequisite tasks are not yet reported done
+This is the only deliberately failing transaction in the walkthrough.
+Read get_plan_summary: reported_done should still be empty.
+Do not retry this step. Its rejection is the expected result.
+
+4. WALLET A — REPORT WORDING DONE
+Switch active wallet to A.
+Method: mark_done
+plan_id: same ID
+expected_plan_hash: same hash
+task_id: wording
+Read summary: wording REPORTED_DONE; cards still waits for tables.
+
+5. WALLET B — REPORT TABLES DONE
+Switch active wallet to B.
+Method: mark_done
+plan_id: same ID
+expected_plan_hash: same hash
+task_id: tables
+Read summary: cards should now be READY_TO_REPORT.
+
+6. WALLET B — REPORT CARDS DONE
+Method: mark_done
+plan_id: same ID
+expected_plan_hash: same hash
+task_id: cards
+Read summary: COMPLETE and all three task IDs in reported_done.
+Read get_task_receipt for cards: two prerequisite_receipt_hashes should be present.
+These are self-reports by the assigned wallets, not proof of real-world work.
+
+7. WALLET A — SHOW THE CYCLE BLOCK
+Switch active wallet to A.
+Method: create_plan
+plan_key: cycle_demo
+partner_wallet: Wallet B's full address
+rules_text: paste these TWO lines:
+
+Finish the card wording before printing and placing the cards.
+Finish printing and placing the cards before finalizing the card wording.
+
+Use the actual returned plan_id (normally 1 on a fresh deployment).
+Read get_plan_summary: expected BLOCKED_CYCLE, with wording -> cards and
+cards -> wording edges. All tasks should be LOCKED_PLAN.
+This is an expected successful saved assessment of an unusable plan.
+Do not attempt to accept or complete this plan; those guards are covered locally.
+
+STOP POINT
+The walkthrough is finished after the valid plan is COMPLETE and the cycle plan
+is BLOCKED_CYCLE, with stored-state reads confirming those outcomes.
+Document actual results, including failures, in HOSTED_RESULTS.json.
+
+IF A CALL FAILS UNEXPECTEDLY
+Do not repeatedly resend. Record its transaction ID and exact error. Check whether
+the plan was saved using get_plan_id(creator, plan_key) and the relevant summary.
+A FINALIZED transaction can still have execution ERROR. A successful execution
+alone does not establish consensus acceptance or finality.
+If interpretation differs or remains undetermined, preserve the evidence and
+investigate the rule/prompt/code. Do not call the expected result a passed test.
+
+IF STUDIO LOSES THE FILE/DEPLOYMENT ASSOCIATION
+Import Contract using the recorded address. Add From File imports source; it does
+not recover state. Deploy new instance creates separate state. Read get_rules and
+the relevant plan summary before further writes.
+
+Current UI/network details may vary. Use the stable hosted Studio environment;
+record what it actually shows rather than guessing a chain ID or finality status.

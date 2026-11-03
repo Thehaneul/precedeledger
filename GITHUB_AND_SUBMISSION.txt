@@ -1,0 +1,57 @@
+PRECEDELEDGER — DRAFT REPOSITORY AND SUBMISSION WORDING
+Status: local checks and bounded Studio walkthrough passed in screenshots.
+No repository created and no submission sent.
+
+Suggested repository name: precedeledger
+Suggested title: PrecedeLedger — shared task prerequisites on GenLayer
+
+Short description:
+A GenLayer Intelligent Contract that interprets written task prerequisites,
+blocks circular or unclear plans, and enforces wallet-specific completion order
+after both participants agree to the saved plan.
+
+Longer description:
+PrecedeLedger is a small community-display workflow prototype with three fixed
+tasks and two participants. The creator supplies before/after rules. Validators
+independently interpret their meaning; deterministic code builds the dependency
+graph and blocks cycles. The partner accepts the exact saved plan hash. Assigned
+wallets can then report task completion only when all declared prerequisites have
+completion receipts. Original rules, decisions and receipts remain inspectable.
+
+Validation currently available:
+94 local fixture-based tests passed, including a check of all 512 directed graphs
+on three tasks against an independent cycle-detection oracle. SDK lint and
+validation passed. User-provided Studio screenshots show plan 0 COMPLETE, the
+expected early-completion rejection, two prerequisite hashes in the cards receipt,
+and plan 1 BLOCKED_CYCLE. The first attempted early report omitted task_id and was
+rejected; the corrected attempt reached the expected prerequisite guard.
+
+Contract address supplied by the user:
+0xb3FB34688208Ce42bB54D392f7B90DC397ae0C96
+
+Evidence scope:
+Screenshots of Accepted-state reads and two FINALIZED / ERROR transaction details.
+No independent RPC, deployed-source or successful-transaction finality audit.
+The source remained unchanged. Full details: HOSTED_RESULTS.json.
+
+Limitations to preserve:
+Completion is an assigned-wallet self-report, not verified delivery. Three fixed
+tasks; unconditional prerequisites only. No payment, booking or identity proof.
+This is a prototype, not production software or a claim of novel graph theory.
+
+Before using this wording for an actual submission:
+- The agreed Studio walkthrough is complete. Preserve its evidence limits.
+- Add the actual repository URL after publication; do not guess a chain ID.
+- Check the current official submission form and requirements.
+- Keep local-fixture and live-validation claims separate.
+
+Do not fill unobserved fields with expected results. No reward is promised.
+Do not publish private evidence or credentials in GitHub.
+
+GITHUB UPLOAD
+Suggested repository name: precedeledger
+Use the extracted files, so the Python source and README are directly visible.
+Upload source, tests, requirements, prepare_test_sdk.py, README.md, research,
+verification and evidence files. Keep the personal reusable handoff JSON for
+your own reference. Do not upload .venv, __pycache__, credentials or screenshots.
+The full starter package can be retained privately as the complete archive.

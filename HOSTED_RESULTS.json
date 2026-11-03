@@ -1,0 +1,263 @@
+{
+  "project": "PrecedeLedger",
+  "version": "precedeledger-0.1",
+  "status": "BOUNDED_STUDIO_WALKTHROUGH_PASSED",
+  "evidence_type": "User-provided Studio screenshots; manually transcribed observations",
+  "environment": {
+    "service": "GenLayer Studio",
+    "visible_host": "studio.genlayer.com",
+    "read_state": "Accepted",
+    "simulation_mode": "Off in screenshots",
+    "device": "Android Chrome",
+    "chain_name": null
+  },
+  "chain_id": null,
+  "contract_address": "0xb3FB34688208Ce42bB54D392f7B90DC397ae0C96",
+  "deployed_source_sha256": null,
+  "deployed_source_verified": false,
+  "deployment_transaction_id": null,
+  "deployment_execution_outcome": null,
+  "creator_wallet": "0x507de2c3391f085e99208c28ad4eeaf567995b43",
+  "partner_wallet": "0xb32569c8822e66fae73b8eb3a11e0e6034bb4638",
+  "valid_plan_id": 0,
+  "valid_plan_hash": "9fcaabdef2b320b44c3178e1a160515868f586b30dd9f8e28361a70def2e1fa6",
+  "cycle_plan_id": 1,
+  "steps": [
+    {
+      "step": 1,
+      "action": "create valid plan",
+      "expected": "AWAITING_PARTNER; VALID_ORDER; wording->cards and tables->cards",
+      "observed": {
+        "status": "AWAITING_PARTNER",
+        "graph_outcome": "VALID_ORDER",
+        "partner_accepted": false,
+        "reported_done": [],
+        "edges": [
+          [
+            "tables",
+            "cards"
+          ],
+          [
+            "wording",
+            "cards"
+          ]
+        ],
+        "all_task_states": "LOCKED_PLAN"
+      },
+      "transaction_id": null,
+      "execution_outcome": null,
+      "consensus_status": null,
+      "finality_status": null,
+      "evidence_screenshot_filenames": [
+        "Screenshot_2026-11-03-11-23-56-870_com.android.chrome.jpg"
+      ],
+      "check_result": "PASS",
+      "evidence_basis": "Accepted-state read screenshot"
+    },
+    {
+      "step": 2,
+      "action": "partner accepts",
+      "expected": "ACTIVE",
+      "observed": {
+        "status": "ACTIVE",
+        "partner_accepted": true,
+        "reported_done": [],
+        "wording": "READY_TO_REPORT",
+        "tables": "READY_TO_REPORT",
+        "cards": "WAITING_FOR_PREREQUISITES",
+        "cards_missing": [
+          "tables",
+          "wording"
+        ]
+      },
+      "transaction_id": null,
+      "execution_outcome": null,
+      "consensus_status": null,
+      "finality_status": null,
+      "evidence_screenshot_filenames": [
+        "Screenshot_2026-11-03-11-26-41-837_com.android.chrome.jpg"
+      ],
+      "check_result": "PASS",
+      "evidence_basis": "Accepted-state read screenshot"
+    },
+    {
+      "step": 3,
+      "action": "early cards completion",
+      "expected": "execution error; no completion record",
+      "observed": {
+        "execution_error": "Prerequisite tasks are not yet reported done",
+        "validators_agreeing_on_displayed_error": 3,
+        "classification": "Expected prerequisite guard rejection"
+      },
+      "transaction_id": null,
+      "execution_outcome": "ERROR",
+      "consensus_status": "Accepted",
+      "finality_status": "FINALIZED",
+      "evidence_screenshot_filenames": [
+        "1003488347.jpg"
+      ],
+      "check_result": "PASS",
+      "evidence_basis": "Transaction detail screenshot"
+    },
+    {
+      "step": 4,
+      "action": "creator reports wording done",
+      "expected": "cards still waits for tables",
+      "observed": {
+        "status": "ACTIVE",
+        "reported_done": [
+          "wording"
+        ],
+        "wording": "REPORTED_DONE",
+        "tables": "READY_TO_REPORT",
+        "cards": "WAITING_FOR_PREREQUISITES",
+        "cards_missing": [
+          "tables"
+        ]
+      },
+      "transaction_id": null,
+      "execution_outcome": null,
+      "consensus_status": null,
+      "finality_status": null,
+      "evidence_screenshot_filenames": [
+        "Screenshot_2026-11-03-11-35-49-690_com.openai.chatgpt.jpg"
+      ],
+      "check_result": "PASS",
+      "evidence_basis": "Accepted-state read screenshot"
+    },
+    {
+      "step": 5,
+      "action": "partner reports tables done",
+      "expected": "cards READY_TO_REPORT",
+      "observed": {
+        "status": "ACTIVE",
+        "reported_done": [
+          "wording",
+          "tables"
+        ],
+        "wording": "REPORTED_DONE",
+        "tables": "REPORTED_DONE",
+        "cards": "READY_TO_REPORT",
+        "cards_missing": []
+      },
+      "transaction_id": null,
+      "execution_outcome": null,
+      "consensus_status": null,
+      "finality_status": null,
+      "evidence_screenshot_filenames": [
+        "Screenshot_2026-11-03-11-39-59-869_com.openai.chatgpt.jpg"
+      ],
+      "check_result": "PASS",
+      "evidence_basis": "Accepted-state read screenshot"
+    },
+    {
+      "step": 6,
+      "action": "partner reports cards done",
+      "expected": "COMPLETE; two prerequisite receipt hashes",
+      "observed": {
+        "status": "COMPLETE",
+        "reported_done": [
+          "wording",
+          "tables",
+          "cards"
+        ],
+        "all_task_states": "REPORTED_DONE",
+        "cards_receipt": {
+          "basis": "ASSIGNED_WALLET_SELF_REPORT",
+          "plan_id": 0,
+          "plan_hash": "9fcaabdef2b320b44c3178e1a160515868f586b30dd9f8e28361a70def2e1fa6",
+          "task_id": "cards",
+          "reported_by": "0xb32569c8822e66fae73b8eb3a11e0e6034bb4638",
+          "reported_done": true,
+          "prerequisite_receipt_hash_count": 2
+        }
+      },
+      "transaction_id": null,
+      "execution_outcome": null,
+      "consensus_status": null,
+      "finality_status": null,
+      "evidence_screenshot_filenames": [
+        "Screenshot_2026-11-03-11-41-32-054_com.android.chrome.jpg",
+        "Screenshot_2026-11-03-11-42-59-261_com.android.chrome.jpg"
+      ],
+      "check_result": "PASS",
+      "evidence_basis": "Accepted-state read screenshot"
+    },
+    {
+      "step": 7,
+      "action": "create cyclic plan",
+      "expected": "BLOCKED_CYCLE; all tasks LOCKED_PLAN",
+      "observed": {
+        "status": "BLOCKED_CYCLE",
+        "graph_outcome": "BLOCKED_CYCLE",
+        "partner_accepted": false,
+        "reported_done": [],
+        "edges": [
+          [
+            "cards",
+            "wording"
+          ],
+          [
+            "wording",
+            "cards"
+          ]
+        ],
+        "all_task_states": "LOCKED_PLAN"
+      },
+      "transaction_id": null,
+      "execution_outcome": null,
+      "consensus_status": null,
+      "finality_status": null,
+      "evidence_screenshot_filenames": [
+        "Screenshot_2026-11-03-11-47-49-533_com.android.chrome.jpg"
+      ],
+      "check_result": "PASS",
+      "evidence_basis": "Accepted-state read screenshot"
+    }
+  ],
+  "walkthrough_complete": true,
+  "unexpected_failures": [
+    {
+      "action": "mark_done with empty task_id",
+      "intended_task_id": "cards",
+      "submitted_task_id": "",
+      "plan_id": 0,
+      "expected_plan_hash": "9fcaabdef2b320b44c3178e1a160515868f586b30dd9f8e28361a70def2e1fa6",
+      "classification": "Input omission, corrected once",
+      "execution_outcome": "ERROR",
+      "consensus_status": "Accepted",
+      "finality_status": "FINALIZED",
+      "error": "task_id_must_be_wording_tables_cards",
+      "transaction_id": null,
+      "evidence_screenshot_filename": "1003488340.jpg",
+      "resolution": "Supplied cards; the corrected attempt reached the prerequisite guard and was rejected as expected. No source change."
+    }
+  ],
+  "notes": "All bounded outcome checks matched the visible state. No further optional live tests are needed. Null fields remain unknown.",
+  "observed_on": "2026-11-03",
+  "contract_address_evidence": "Full address supplied by user; deployed label in screenshots shows matching abbreviated address.",
+  "cycle_plan_hash": "78e5aab2e7a04337aa7779f7015bcfa47b91f68f7ca410c3468d4d130834301a",
+  "valid_plan_key": "display_demo",
+  "cycle_plan_key": "cycle_demo",
+  "instructed_valid_rules_text": "Finish the card wording before printing and placing the cards.\nArrange the tables before printing and placing the cards.",
+  "instructed_cycle_rules_text": "Finish the card wording before printing and placing the cards.\nFinish printing and placing the cards before finalizing the card wording.",
+  "stop_point_reached": true,
+  "source_changed_during_walkthrough": false,
+  "evidence_limits": [
+    "Evidence consists of user-provided Studio screenshots and the user-reported full contract address; no independent RPC or explorer verification was performed.",
+    "Successful state transitions are evidenced by Accepted-state reads. Their individual transaction IDs, execution receipts and finality were not supplied.",
+    "The two rejected attempts show FINALIZED / ERROR and Accepted consensus history. Acceptance and finalization do not mean successful execution.",
+    "The summary shown with the early cards rejection is timestamped 11:32, before the 11:33 error; it is not asserted to be a post-rejection read.",
+    "The deployed source, chain ID and deployment receipt were not independently verified. The recorded source SHA-256 belongs to the unchanged local file.",
+    "No complete get_plan output was supplied, so exact stored original rule text and per-rule evidence were not independently inspected. Rule text below records the instructed test inputs.",
+    "Two hosted interpretation outcomes are a bounded smoke check, not a live-model accuracy study, security audit or production-readiness finding.",
+    "The cards receipt displays two prerequisite hashes; the underlying wording/tables receipts were not separately fetched or cryptographically compared."
+  ],
+  "initial_get_rules": {
+    "screenshot_filename": "Screenshot_2026-11-03-11-20-01-831_com.android.chrome.jpg",
+    "version": "precedeledger-0.1",
+    "plan_count": 0,
+    "max_plans": 100,
+    "completion_basis": "ASSIGNED_WALLET_SELF_REPORT"
+  }
+}

@@ -1,0 +1,37 @@
+PRECEDELEDGER — START HERE
+Updated 3 November 2026, Africa/Lagos.
+
+CURRENT STATUS
+94 local fixture-based tests passed; SDK lint and validation passed.
+The bounded Studio walkthrough passed in the user's screenshots:
+- Plan 0 COMPLETE; all three tasks REPORTED_DONE.
+- Cards receipt contains two prerequisite receipt hashes.
+- Plan 1 BLOCKED_CYCLE; all tasks LOCKED_PLAN.
+The agreed live-testing stop point is reached. GitHub and submission are pending.
+
+DEPLOYMENT
+Contract: 0xb3FB34688208Ce42bB54D392f7B90DC397ae0C96
+Creator / wording: 0x507de2c3391f085e99208c28ad4eeaf567995b43
+Partner / tables and cards: 0xb32569c8822e66fae73b8eb3a11e0e6034bb4638
+Plan 0 hash: 9fcaabdef2b320b44c3178e1a160515868f586b30dd9f8e28361a70def2e1fa6
+The full address was supplied by the user; screenshots show its abbreviated
+label. Chain ID, deployed source and successful transaction finality were not
+independently verified. Details and the two error attempts are preserved in
+HOSTED_RESULTS.json.
+
+NEXT ACTION
+Create a GitHub repository named precedeledger and upload the reviewed project
+files from this extracted folder. README.md and GITHUB_AND_SUBMISSION.txt contain
+the description and evidence. Keep this reusable personal build handoff for your
+own reference: GenLayer_Build_Handoff_2026-11-03.json.
+After publication, record the actual repository URL, then check the current
+official submission form. Nothing has been submitted yet.
+
+WHAT TO KEEP
+Keep this ZIP as the complete project reference. PHONE_WALKTHROUGH.txt is the
+reproduction checklist for a fresh instance, not a request to repeat completed
+steps. Prior projects and this source were not changed during live testing.
+
+IMPORTANT MEANING
+Completion is an assigned-wallet self-report, not verified physical work.
+All examples are fictional. No real-money spending is needed or authorized.

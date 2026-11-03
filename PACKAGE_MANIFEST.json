@@ -1,0 +1,97 @@
+{
+  "project": "PrecedeLedger",
+  "version": "precedeledger-0.1",
+  "updated_on": "2026-11-03",
+  "files": [
+    {
+      "filename": ".gitignore",
+      "bytes": 51,
+      "sha256": "fb459520dbe801400c8b0585992a6eb86d91a13fff6f46c92263b402eed60379"
+    },
+    {
+      "filename": "EVIDENCE.json",
+      "bytes": 3152,
+      "sha256": "2ed406b02cec05b88fc61158eede95691811ff8acdbb4a16787f20bea7ed8d8b"
+    },
+    {
+      "filename": "GITHUB_AND_SUBMISSION.txt",
+      "bytes": 3030,
+      "sha256": "eb983dfc3ac9d141c260c62359353c720bb58292eff610323813bb645caa59af"
+    },
+    {
+      "filename": "GenLayer_Build_Handoff_2026-11-03.json",
+      "bytes": 11106,
+      "sha256": "ce52da392f07d4637034c9169f9ef6bdc70f54bda0d9487a166e696f054ddc2b"
+    },
+    {
+      "filename": "HOSTED_RESULTS.json",
+      "bytes": 9822,
+      "sha256": "614d5a45938954b73d4bbd976652aed9cbeda7482f466035712a8488ef69f97b"
+    },
+    {
+      "filename": "IDEA_RESEARCH.md",
+      "bytes": 5527,
+      "sha256": "c11315e6c0f481e7954ba703ae2957c4e2c822b0ddf5aa2cbcb0a42d805e48fc"
+    },
+    {
+      "filename": "PHONE_WALKTHROUGH.txt",
+      "bytes": 5175,
+      "sha256": "9144254e9a96a00090b41475b7b8e1560ae794f10a38a80582ce6ca08aab32a2"
+    },
+    {
+      "filename": "README.md",
+      "bytes": 9894,
+      "sha256": "eb8fadabff91f764a4177d9384458dc0c3102861f3eebd45dc9fe46d981d90b0"
+    },
+    {
+      "filename": "START_HERE.txt",
+      "bytes": 1842,
+      "sha256": "9ddc8594d0b31384a7f2b3cddb567befaddc9ae5c0869ff9a83f924003113ec3"
+    },
+    {
+      "filename": "VERIFICATION.md",
+      "bytes": 4864,
+      "sha256": "1f73d770af594a4200ff73e55f6593d746ce38c30147589509e07b31a1c9c415"
+    },
+    {
+      "filename": "local_environment.json",
+      "bytes": 130,
+      "sha256": "17a4c0583a6cd6658c738121c2836753f9f083d31b975334bf38bc01db3c6679"
+    },
+    {
+      "filename": "local_test_results.txt",
+      "bytes": 787,
+      "sha256": "9d33a56a9c977001397b28d3aa2fcfbe296db86ab86dae109fb12160669a7a13"
+    },
+    {
+      "filename": "precedeledger.py",
+      "bytes": 17860,
+      "sha256": "670a3b2816aa932b3c283e23922a325bb4b906940468d51443c65924455146a3"
+    },
+    {
+      "filename": "prepare_test_sdk.py",
+      "bytes": 798,
+      "sha256": "4cc31f08cefbf6c4783721651a05a968e83d4635857a82846573b09986b6aa19"
+    },
+    {
+      "filename": "requirements-dev.txt",
+      "bytes": 76,
+      "sha256": "fba6074b825613119cfd2c18300eb6a30d598e3dfd463195714fe5b8162fe752"
+    },
+    {
+      "filename": "requirements-lock.txt",
+      "bytes": 952,
+      "sha256": "7d99d809f4578c0f8bfbad5eb49c15f017bedeeb750c05c10e8be9b5c0a37d62"
+    },
+    {
+      "filename": "sdk_check_results.json",
+      "bytes": 353,
+      "sha256": "d37df95ef37b0cfbc663e11dba14fd6e2f220556823559ada34673dce2473d8b"
+    },
+    {
+      "filename": "test_precedeledger.py",
+      "bytes": 19742,
+      "sha256": "d65fb272d80d42feb722be92d01162ec51d7a248a09a9098bc4aa2e0504ceab9"
+    }
+  ]
+}

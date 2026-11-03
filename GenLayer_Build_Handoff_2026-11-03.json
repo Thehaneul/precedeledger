@@ -1,0 +1,208 @@
+{
+  "document_type": "GenLayer build workflow and project handoff",
+  "schema_version": 2,
+  "prepared_on": "2026-11-03",
+  "timezone": "Africa/Lagos",
+  "owner_github": "Thehaneul",
+  "authority_note": "Current user instructions and newer verified files take priority. This is curated context, not a full memory export.",
+  "prior_handoff": {
+    "filename": "GenLayer_Project_Handover_2026-10-14.md",
+    "library_file_id": "libfile_9d2fa6e026d48191b783053b429d6909"
+  },
+  "previous_projects": [
+    {
+      "name": "SourceRoots",
+      "purpose": "Evidence-origin relationships in supplied text",
+      "status": "User-reported submitted; historical 100 XP"
+    },
+    {
+      "name": "HoldoutLedger",
+      "purpose": "Documented train/test group separation",
+      "status": "User-reported submitted; historical 100 XP"
+    },
+    {
+      "name": "ScopeHandshake",
+      "purpose": "Work-scope interpretation and bilateral approval",
+      "status": "Built/tested historically; final submission not established by recovered handover"
+    },
+    {
+      "name": "NoticeParity",
+      "purpose": "Translation fidelity and controlled reuse",
+      "status": "Built/tested historically; final submission not established by recovered handover"
+    },
+    {
+      "name": "ExplainGate",
+      "purpose": "Learning explanations and wallet-specific checkpoints",
+      "status": "User-confirmed submitted 2026-10-14; walkthrough finished",
+      "repository": "https://github.com/Thehaneul/explaingate"
+    },
+    {
+      "name": "QueuePact",
+      "purpose": "Two-team request routing and acknowledgement",
+      "status": "User-confirmed submitted in recovered conversation",
+      "repository": "https://github.com/Thehaneul/queuepact",
+      "package_library_file_id": "libfile_504eac2249748191b5613b4a248dc8d4"
+    },
+    {
+      "name": "CommonPick",
+      "purpose": "Select a meeting option compatible with two members",
+      "status": "User-confirmed submitted in recovered conversation by 2026-10-21",
+      "repository": "https://github.com/Thehaneul/commonpick",
+      "package_library_file_id": "libfile_4919378ff4a48191af77a8a853c5a411"
+    }
+  ],
+  "working_preferences": [
+    "Assistant performs research, implementation, local checks, packaging and evidence interpretation.",
+    "User normally operates GenLayer Studio and GitHub in Android Chrome. Give short numbered steps with exact methods and copyable input.",
+    "Keep the live walkthrough bounded. Do not add optional tests after its stop point.",
+    "Inspect exact errors and stored state before retries. Preserve successful prior results.",
+    "No unrequested external publication or submission. No spending or requests for private keys.",
+    "Keep every new project separate from previous code and deployments.",
+    "Do not imply local fixtures prove real-model accuracy or network consensus.",
+    "For Studio write calls, show every field in its own copyable block, especially task_id. Keep the assigned wallet suffix explicit."
+  ],
+  "reusable_workflow": [
+    "Compare three bounded ideas against our existing projects and public prior work; check names; recommend a practical differentiated option.",
+    "Verify current official GenLayer APIs and testing guidance; record exact tested dependencies.",
+    "Define semantic decision, immutable evidence, explicit review outcomes, deterministic consequence, permissions and limits.",
+    "Implement strict output checking, independent validator comparison/audit, bounded malformed-output handling and writes only after accepted evaluation.",
+    "Test workflow, invalid output, disagreement, permissions, hashes, replay, isolation and nonmutation on rejected evaluation; distinguish simulated checks.",
+    "Package source, tests, research, reproduction instructions, observed evidence and a fixed phone walkthrough.",
+    "Run the bounded Studio walkthrough with actual wallets; check execution, consensus and stored state separately.",
+    "Document actual evidence. Then prepare GitHub and submission using current official requirements; preserve limitations and do not promise rewards."
+  ],
+  "current_project": {
+    "project": "PrecedeLedger",
+    "version": "precedeledger-0.1",
+    "prepared_on": "2026-11-03",
+    "timezone": "Africa/Lagos",
+    "status": "LOCAL_CHECKS_AND_BOUNDED_STUDIO_WALKTHROUGH_PASSED",
+    "source_sha256": "670a3b2816aa932b3c283e23922a325bb4b906940468d51443c65924455146a3",
+    "local_tests": {
+      "passed": 94,
+      "failed": 0,
+      "elapsed_seconds": 23.14,
+      "model_responses": "authored fixtures",
+      "exhaustive_directed_graphs_checked": 512
+    },
+    "sdk_checks": {
+      "lint_passed": 3,
+      "validation_passed": true,
+      "public_methods": 8,
+      "reads": 5,
+      "writes": 3,
+      "constructor_arguments": 0,
+      "runner_version": "v0.3.0-rc7",
+      "newer_runner_notice": true
+    },
+    "deployed_source_verified": false,
+    "contract_address": "0xb3FB34688208Ce42bB54D392f7B90DC397ae0C96",
+    "repository_url": null,
+    "submitted": false,
+    "spend_gbp": 0,
+    "important_limit": "Completion receipts are assigned-wallet self-reports, not proof of physical work.",
+    "local_raw_evidence": [
+      "local_test_results.txt",
+      "sdk_check_results.json",
+      "local_environment.json"
+    ],
+    "updated_on": "2026-11-03",
+    "hosted_walkthrough": {
+      "complete": true,
+      "evidence_basis": "User-provided Studio screenshots, Accepted-state reads and two error transaction details",
+      "valid_plan_id": 0,
+      "valid_plan_hash": "9fcaabdef2b320b44c3178e1a160515868f586b30dd9f8e28361a70def2e1fa6",
+      "valid_plan_status": "COMPLETE",
+      "cycle_plan_id": 1,
+      "cycle_plan_hash": "78e5aab2e7a04337aa7779f7015bcfa47b91f68f7ca410c3468d4d130834301a",
+      "cycle_plan_status": "BLOCKED_CYCLE",
+      "cards_prerequisite_receipt_hash_count": 2,
+      "expected_rejections_observed": 1,
+      "additional_input_error_attempts": 1,
+      "independent_chain_verification": false,
+      "model_accuracy_study": false,
+      "details": "HOSTED_RESULTS.json"
+    },
+    "evidence_limits": [
+      "Evidence consists of user-provided Studio screenshots and the user-reported full contract address; no independent RPC or explorer verification was performed.",
+      "Successful state transitions are evidenced by Accepted-state reads. Their individual transaction IDs, execution receipts and finality were not supplied.",
+      "The two rejected attempts show FINALIZED / ERROR and Accepted consensus history. Acceptance and finalization do not mean successful execution.",
+      "The summary shown with the early cards rejection is timestamped 11:32, before the 11:33 error; it is not asserted to be a post-rejection read.",
+      "The deployed source, chain ID and deployment receipt were not independently verified. The recorded source SHA-256 belongs to the unchanged local file.",
+      "No complete get_plan output was supplied, so exact stored original rule text and per-rule evidence were not independently inspected. Rule text below records the instructed test inputs.",
+      "Two hosted interpretation outcomes are a bounded smoke check, not a live-model accuracy study, security audit or production-readiness finding.",
+      "The cards receipt displays two prerequisite hashes; the underlying wording/tables receipts were not separately fetched or cryptographically compared."
+    ]
+  },
+  "selected_design": {
+    "name": "PrecedeLedger",
+    "problem": "Interpret written prerequisites and enforce the agreed order of wallet completion reports.",
+    "task_ids": [
+      "wording",
+      "tables",
+      "cards"
+    ],
+    "roles": {
+      "creator": [
+        "wording"
+      ],
+      "partner": [
+        "tables",
+        "cards"
+      ]
+    },
+    "ai_judgment": "Every supplied prerequisite rule, normalized per-rule edges, and whether the whole rule set is expressible.",
+    "deterministic_logic": [
+      "graph union",
+      "cycle detection",
+      "permissions",
+      "hashes",
+      "acceptance",
+      "prerequisite completion gates"
+    ],
+    "not_implemented": [
+      "task generation",
+      "conditional or OR dependencies",
+      "payments",
+      "external evidence retrieval",
+      "verified physical completion",
+      "frontend"
+    ],
+    "prior_art": "MissionMesh already describes GenLayer task graphs and coordination; no novelty claim."
+  },
+  "next_action": "Create the precedeledger GitHub repository and upload the reviewed project files; user publication action is still pending. Then verify current official submission requirements and prepare the actual form fields.",
+  "next_action_requires": "A real repository URL after user publication and the official submission form or current official requirements. Do not invent publication or submission.",
+  "walkthrough_stop_point": "REACHED on 2026-11-03: plan 0 COMPLETE and plan 1 BLOCKED_CYCLE, with Accepted-state reads. Cards receipt has two prerequisite hashes. One extra empty-task-ID error occurred before the planned prerequisite rejection. Do not restart or extend the walkthrough.",
+  "known_limitations": [
+    "Evidence consists of user-provided Studio screenshots and the user-reported full contract address; no independent RPC or explorer verification was performed.",
+    "Successful state transitions are evidenced by Accepted-state reads. Their individual transaction IDs, execution receipts and finality were not supplied.",
+    "The deployed source, chain ID and deployment receipt were not independently verified. The recorded source SHA-256 belongs to the unchanged local file.",
+    "No complete get_plan output was supplied, so exact stored original rule text and per-rule evidence were not independently inspected. Rule text below records the instructed test inputs.",
+    "Two hosted interpretation outcomes are a bounded smoke check, not a live-model accuracy study, security audit or production-readiness finding.",
+    "SDK reports a newer runner; the pinned tested runner remains in use.",
+    "A public 100-plan prototype cap is not spam resistance.",
+    "Completion claims are immutable self-reports."
+  ],
+  "files": {
+    "source": "precedeledger.py",
+    "package": "PrecedeLedger_Starter_Package.zip",
+    "readme": "README.md",
+    "verification": "VERIFICATION.md",
+    "live_evidence": "HOSTED_RESULTS.json",
+    "walkthrough": "PHONE_WALKTHROUGH.txt"
+  },
+  "updated_on": "2026-11-03",
+  "current_deployment": {
+    "contract_address": "0xb3FB34688208Ce42bB54D392f7B90DC397ae0C96",
+    "creator_wallet": "0x507de2c3391f085e99208c28ad4eeaf567995b43",
+    "partner_wallet": "0xb32569c8822e66fae73b8eb3a11e0e6034bb4638",
+    "valid_plan_id": 0,
+    "valid_plan_hash": "9fcaabdef2b320b44c3178e1a160515868f586b30dd9f8e28361a70def2e1fa6",
+    "valid_plan_status": "COMPLETE",
+    "cycle_plan_id": 1,
+    "cycle_plan_hash": "78e5aab2e7a04337aa7779f7015bcfa47b91f68f7ca410c3468d4d130834301a",
+    "cycle_plan_status": "BLOCKED_CYCLE",
+    "evidence_basis": "User screenshots; no independent RPC/source audit",
+    "source_changed": false
+  }
+}

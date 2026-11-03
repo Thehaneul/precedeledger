@@ -1,0 +1,63 @@
+{
+  "project": "PrecedeLedger",
+  "version": "precedeledger-0.1",
+  "prepared_on": "2026-11-03",
+  "timezone": "Africa/Lagos",
+  "status": "LOCAL_CHECKS_AND_BOUNDED_STUDIO_WALKTHROUGH_PASSED",
+  "source_sha256": "670a3b2816aa932b3c283e23922a325bb4b906940468d51443c65924455146a3",
+  "local_tests": {
+    "passed": 94,
+    "failed": 0,
+    "elapsed_seconds": 23.14,
+    "model_responses": "authored fixtures",
+    "exhaustive_directed_graphs_checked": 512
+  },
+  "sdk_checks": {
+    "lint_passed": 3,
+    "validation_passed": true,
+    "public_methods": 8,
+    "reads": 5,
+    "writes": 3,
+    "constructor_arguments": 0,
+    "runner_version": "v0.3.0-rc7",
+    "newer_runner_notice": true
+  },
+  "deployed_source_verified": false,
+  "contract_address": "0xb3FB34688208Ce42bB54D392f7B90DC397ae0C96",
+  "repository_url": null,
+  "submitted": false,
+  "spend_gbp": 0,
+  "important_limit": "Completion receipts are assigned-wallet self-reports, not proof of physical work.",
+  "local_raw_evidence": [
+    "local_test_results.txt",
+    "sdk_check_results.json",
+    "local_environment.json"
+  ],
+  "updated_on": "2026-11-03",
+  "hosted_walkthrough": {
+    "complete": true,
+    "evidence_basis": "User-provided Studio screenshots, Accepted-state reads and two error transaction details",
+    "valid_plan_id": 0,
+    "valid_plan_hash": "9fcaabdef2b320b44c3178e1a160515868f586b30dd9f8e28361a70def2e1fa6",
+    "valid_plan_status": "COMPLETE",
+    "cycle_plan_id": 1,
+    "cycle_plan_hash": "78e5aab2e7a04337aa7779f7015bcfa47b91f68f7ca410c3468d4d130834301a",
+    "cycle_plan_status": "BLOCKED_CYCLE",
+    "cards_prerequisite_receipt_hash_count": 2,
+    "expected_rejections_observed": 1,
+    "additional_input_error_attempts": 1,
+    "independent_chain_verification": false,
+    "model_accuracy_study": false,
+    "details": "HOSTED_RESULTS.json"
+  },
+  "evidence_limits": [
+    "Evidence consists of user-provided Studio screenshots and the user-reported full contract address; no independent RPC or explorer verification was performed.",
+    "Successful state transitions are evidenced by Accepted-state reads. Their individual transaction IDs, execution receipts and finality were not supplied.",
+    "The two rejected attempts show FINALIZED / ERROR and Accepted consensus history. Acceptance and finalization do not mean successful execution.",
+    "The summary shown with the early cards rejection is timestamped 11:32, before the 11:33 error; it is not asserted to be a post-rejection read.",
+    "The deployed source, chain ID and deployment receipt were not independently verified. The recorded source SHA-256 belongs to the unchanged local file.",
+    "No complete get_plan output was supplied, so exact stored original rule text and per-rule evidence were not independently inspected. Rule text below records the instructed test inputs.",
+    "Two hosted interpretation outcomes are a bounded smoke check, not a live-model accuracy study, security audit or production-readiness finding.",
+    "The cards receipt displays two prerequisite hashes; the underlying wording/tables receipts were not separately fetched or cryptographically compared."
+  ]
+}
